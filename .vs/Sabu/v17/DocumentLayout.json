@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Sabu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\services\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\services\\implements\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\services\\abstracts\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\services\\abstracts\\ilanguageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\dtos\\languages\\languageupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\dtos\\languages\\languageupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\dtos\\languages\\languagecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\dtos\\languages\\languagecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\dtos\\languages\\languagegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\dtos\\languages\\languagegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\entities\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\sabu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\sabu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\sabu.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\sabu.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|c:\\users\\asus\\source\\repos\\sabu\\sabu\\migrations\\20241220054256_seeddatasforlanguage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5B9FB70-475F-4F4D-9E56-B12CDDCD5DC4}|Sabu\\Sabu.csproj|solutionrelative:sabu\\migrations\\20241220054256_seeddatasforlanguage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LanguageUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageUpdateDto.cs",
+              "RelativeDocumentMoniker": "Sabu\\DTOs\\Languages\\LanguageUpdateDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageUpdateDto.cs",
+              "RelativeToolTip": "Sabu\\DTOs\\Languages\\LanguageUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T06:46:24.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LanguageCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageCreateDto.cs",
+              "RelativeDocumentMoniker": "Sabu\\DTOs\\Languages\\LanguageCreateDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageCreateDto.cs",
+              "RelativeToolTip": "Sabu\\DTOs\\Languages\\LanguageCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T06:03:35.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LanguageService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Services\\Implements\\LanguageService.cs",
+              "RelativeDocumentMoniker": "Sabu\\Services\\Implements\\LanguageService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Services\\Implements\\LanguageService.cs",
+              "RelativeToolTip": "Sabu\\Services\\Implements\\LanguageService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T05:58:57.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILanguageService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Services\\Abstracts\\ILanguageService.cs",
+              "RelativeDocumentMoniker": "Sabu\\Services\\Abstracts\\ILanguageService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Services\\Abstracts\\ILanguageService.cs",
+              "RelativeToolTip": "Sabu\\Services\\Abstracts\\ILanguageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T05:58:40.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LanguagesController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Controllers\\LanguagesController.cs",
+              "RelativeDocumentMoniker": "Sabu\\Controllers\\LanguagesController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Controllers\\LanguagesController.cs",
+              "RelativeToolTip": "Sabu\\Controllers\\LanguagesController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T05:46:04.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Language.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Entities\\Language.cs",
+              "RelativeDocumentMoniker": "Sabu\\Entities\\Language.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Entities\\Language.cs",
+              "RelativeToolTip": "Sabu\\Entities\\Language.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:52:11.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Program.cs",
+              "RelativeDocumentMoniker": "Sabu\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Program.cs",
+              "RelativeToolTip": "Sabu\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:57:04.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241220054256_SeedDatasForLanguage.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Migrations\\20241220054256_SeedDatasForLanguage.cs",
+              "RelativeDocumentMoniker": "Sabu\\Migrations\\20241220054256_SeedDatasForLanguage.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Migrations\\20241220054256_SeedDatasForLanguage.cs",
+              "RelativeToolTip": "Sabu\\Migrations\\20241220054256_SeedDatasForLanguage.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T05:42:56.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\appsettings.json",
+              "RelativeDocumentMoniker": "Sabu\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\appsettings.json",
+              "RelativeToolTip": "Sabu\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-20T04:41:13.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LanguageGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageGetDto.cs",
+              "RelativeDocumentMoniker": "Sabu\\DTOs\\Languages\\LanguageGetDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\DTOs\\Languages\\LanguageGetDto.cs",
+              "RelativeToolTip": "Sabu\\DTOs\\Languages\\LanguageGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T06:06:26.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sabu.csproj",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Sabu.csproj",
+              "RelativeDocumentMoniker": "Sabu\\Sabu.csproj",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Sabu.csproj",
+              "RelativeToolTip": "Sabu\\Sabu.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-20T03:51:42.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Sabu.http",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Sabu.http",
+              "RelativeDocumentMoniker": "Sabu\\Sabu.http",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Sabu\\Sabu\\Sabu.http",
+              "RelativeToolTip": "Sabu\\Sabu.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-20T03:51:28.588Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

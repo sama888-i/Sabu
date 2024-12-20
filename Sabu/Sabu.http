@@ -1,0 +1,6 @@
+@Sabu_HostAddress = http://localhost:5218
+
+GET {{Sabu_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
