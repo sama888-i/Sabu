@@ -61,5 +61,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.LanguagesController",
+    "Method": "GetByCode",
+    "RelativePath": "api/Languages/ByCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

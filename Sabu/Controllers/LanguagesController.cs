@@ -31,5 +31,10 @@ namespace Sabu.Controllers
             await _service.DeleteAsync(code);
             return Ok();
         }
+        [HttpGet("ByCode")]
+        public async Task<IActionResult> GetByCode(string code)
+        {
+            return Ok(await _service.GetByCodeLangAsync(code));
+        }
     }
 }

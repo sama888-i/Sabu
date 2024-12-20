@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sabu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11ba04c8f9172c240fddb019a3cb58576ea4625c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sabu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sabu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

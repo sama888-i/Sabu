@@ -53,5 +53,17 @@ namespace Sabu.Services.Implements
             return true;
 
         }
+        public async Task<LanguageGetDto> GetByCodeLangAsync(string code)
+        {
+            var language = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
+            if (language == null) return null;
+            return new LanguageGetDto
+            {
+                Code =language .Code ,
+                Name = language.Name,
+                Icon = language.Icon
+
+            };
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace Sabu.Services.Abstracts
         Task<IEnumerable<LanguageGetDto>> GetAllAsync();
         Task<LanguageGetDto> UpdateAsync(string code,LanguageUpdateDto dto);
         Task<bool> DeleteAsync(string code);
+        Task<LanguageGetDto> GetByCodeLangAsync(string code);
     }
 }
