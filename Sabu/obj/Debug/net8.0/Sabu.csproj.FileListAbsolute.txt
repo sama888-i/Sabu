@@ -146,3 +146,7 @@ C:\Users\Asus\source\repos\Sabu\Sabu\obj\Debug\net8.0\Sabu.pdb
 C:\Users\Asus\source\repos\Sabu\Sabu\obj\Debug\net8.0\Sabu.genruntimeconfig.cache
 C:\Users\Asus\source\repos\Sabu\Sabu\obj\Debug\net8.0\ref\Sabu.dll
 C:\Users\Asus\source\repos\Sabu\Sabu\obj\Debug\net8.0\Sabu.sourcelink.json
+C:\Users\Asus\source\repos\Sabu\Sabu\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Asus\source\repos\Sabu\Sabu\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Asus\source\repos\Sabu\Sabu\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Asus\source\repos\Sabu\Sabu\bin\Debug\net8.0\AutoMapper.dll

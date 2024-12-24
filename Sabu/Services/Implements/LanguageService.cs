@@ -1,33 +1,30 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Sabu.DAL;
 using Sabu.DTOs.Languages;
+using Sabu.Entities;
+using Sabu.Exceptions.Languages;
 using Sabu.Services.Abstracts;
 
 namespace Sabu.Services.Implements
 {
-    public class LanguageService(SabuDbContext _context) : ILanguageService
+    public class LanguageService(SabuDbContext _context,IMapper _mapper) : ILanguageService
     {
         public async Task CreateAsync(LanguageCreateDto dto)
         {
-            await _context.Languages.AddAsync(new Entities.Language
-            {
-                Code =dto.Code,
-                Name =dto.Name,
-                Icon=dto.Icon 
-
-            });
+            if (await _context.Languages.AnyAsync(x => x.Code == dto.Code))
+                throw new LanguageExistException();
+            await _context.Languages.AddAsync(_mapper.Map<Language>(dto));
+          
             await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<LanguageGetDto>> GetAllAsync()
-        {
-            return await _context.Languages.Select(x => new LanguageGetDto
-            {
-                Code=x.Code ,
-                Name =x.Name ,
-                Icon =x.Icon 
-            }).ToListAsync();
+        { 
+            var datas= await _context.Languages.ToListAsync();
+            return _mapper.Map<IEnumerable<LanguageGetDto>>(datas);
+
         }
         public async Task<LanguageGetDto> UpdateAsync(string code,LanguageUpdateDto dto)
         {

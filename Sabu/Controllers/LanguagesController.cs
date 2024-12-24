@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Sabu.DTOs.Languages;
+using Sabu.Exceptions;
 using Sabu.Services.Abstracts;
 
 namespace Sabu.Controllers
@@ -16,8 +18,34 @@ namespace Sabu.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(LanguageCreateDto dto)
         {
-            await _service.CreateAsync(dto);
-            return Ok();
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok();
+
+            }
+            catch(Exception ex)
+            {
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        StatusCode=bEx.StatusCode,
+                        Message=bEx.ErrorMessage
+
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message 
+
+                    });
+                }
+
+            }
+           
         }
         [HttpPut]
         public async Task<IActionResult> Update(string code,LanguageUpdateDto dto)
