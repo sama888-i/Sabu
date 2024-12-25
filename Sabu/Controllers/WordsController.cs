@@ -109,5 +109,16 @@ namespace Sabu.Controllers
             }
 
         }
+        [HttpPost("[action]") ]
+        public async Task<IActionResult> CreateMany(List<WordCreateDto> dto)
+        {
+            foreach(var item in dto)
+            {
+                await _service.CreateAsync(item);
+            }
+          
+            return Ok();
+
+        }
     }
 }

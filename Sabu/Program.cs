@@ -24,8 +24,8 @@ namespace Sabu
 
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-            builder.Services.AddScoped<ILanguageService, LanguageService>();
-            builder.Services.AddScoped<IWordService, WordService>();
+            builder.Services.AddServices();
+            builder.Services.AddMemoryCache();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

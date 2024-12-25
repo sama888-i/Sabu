@@ -19,12 +19,22 @@ namespace Sabu.Validators.Words
               .NotNull()
                      .WithMessage("Ad null ola bilməz")
               .MaximumLength(32);
-            RuleFor(x => x.BannedWords)
+            RuleForEach(x => x.BannedWords)
               .NotEmpty()
                      .WithMessage("BanWord boş ola bilməz")
               .NotNull()
                     .WithMessage("BanWord null ola bilməz");
-              
+
+            RuleFor(x => x.BannedWords)
+              .NotNull()
+                   .WithMessage("BanWord boş ola bilməz")
+              .Must(x => x.Count == 6)
+                   .WithMessage("BanWord sayi 6 olmalidir");
+            
+                  
+
+
+
 
 
 

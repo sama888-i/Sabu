@@ -1,5 +1,58 @@
 [
   {
+    "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "Create",
+    "RelativePath": "api/Games",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Sabu.DTOs.Games.GameCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "Get",
+    "RelativePath": "api/Games/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "Set",
+    "RelativePath": "api/Games/Set",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sabu.Controllers.LanguagesController",
     "Method": "Get",
     "RelativePath": "api/Languages",
@@ -136,6 +189,22 @@
       {
         "Name": "dto",
         "Type": "Sabu.DTOs.Words.WordUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.WordsController",
+    "Method": "CreateMany",
+    "RelativePath": "api/Words/CreateMany",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[Sabu.DTOs.Words.WordCreateDto, Sabu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
