@@ -1,4 +1,5 @@
-﻿using Sabu.Entities;
+﻿using Sabu.DTOs.Words;
+using Sabu.Entities;
 
 namespace Sabu.DTOs.Games
 {
@@ -7,7 +8,8 @@ namespace Sabu.DTOs.Games
         public byte Success { get; set; }
         public byte Fail{ get; set; }
         public byte Skip { get; set; }
-        public  Stack<Word>Words { get; set; }
-        public int[] UsedWordIds { get; set; }
+        public  Stack<WordForGameDto>Words { get; set; }
+        public IEnumerable<int> UsedWordIds { get; set; }
+        public int MaxSkipCount { get; set; }
     }
 }

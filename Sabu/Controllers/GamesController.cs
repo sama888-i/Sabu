@@ -25,6 +25,18 @@ namespace Sabu.Controllers
             _cache.Set<string>(key, value, DateTime.Now.AddSeconds(20));
             return Ok();
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Start(Guid id)
+        {
+            
+            return Ok(await _service.Start(id));
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Skip(Guid id)
+        {
+
+            return Ok(await _service.Skip(id));
+        }
 
     }
 }

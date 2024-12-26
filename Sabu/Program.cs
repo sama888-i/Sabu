@@ -1,9 +1,12 @@
 
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Sabu.DAL;
 using Sabu.Entities;
+using Sabu.Exceptions;
 using Sabu.Services.Abstracts;
 using Sabu.Services.Implements;
 using Sabu.Validators.Languages;
@@ -38,7 +41,7 @@ namespace Sabu
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseSabuExceptionHandler();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
