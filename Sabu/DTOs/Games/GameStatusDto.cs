@@ -11,5 +11,6 @@ namespace Sabu.DTOs.Games
         public  Stack<WordForGameDto>Words { get; set; }
         public IEnumerable<int> UsedWordIds { get; set; }
         public int MaxSkipCount { get; set; }
+        public int FailCount { get; set; }
     }
 }

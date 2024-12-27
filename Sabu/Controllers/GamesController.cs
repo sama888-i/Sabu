@@ -37,6 +37,26 @@ namespace Sabu.Controllers
 
             return Ok(await _service.Skip(id));
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult>Fail(Guid id)
+        {
+            await _service.Fail(id);
+            return Ok();       
 
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Success(Guid id)
+        {
+            await _service.Success(id);
+            return Ok();
+
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> End(Guid id)
+        {
+           
+            return Ok(await _service.End(id));
+
+        }
     }
 }

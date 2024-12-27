@@ -16,97 +16,27 @@ namespace Sabu.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Create(WordCreateDto dto)
-        {
-            try
-            {
-                await _service.CreateAsync(dto);
-                return Ok();
-
-            }
-            catch(Exception ex)
-            {
-                if (ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-
-                    });
-                }
-
-            }
+        {  
+             await _service.CreateAsync(dto);
+             return Ok();
 
         }
         [HttpDelete]
         public async Task<IActionResult> DeleteWord(string text)
-        {
-            try
-            {
-                await _service.DeleteAsync(text);
-                return Ok();
-
-            }
-            catch (Exception ex)
-            {
-                if (ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-
-                    });
-                }
-
-            }
-
+        {         
+            await _service.DeleteAsync(text);
+            return Ok();
+           
         }
+
+        
         [HttpPut]
         public async Task<IActionResult> UpdateWord(string text,WordUpdateDto dto)
-        {
-            try
-            {
-                await _service.UpdateAsync(text, dto);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                if (ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-
-                    });
-                }
-
-            }
+        {            
+            
+            await _service.UpdateAsync(text, dto);
+            return Ok();
+                       
 
         }
         [HttpPost("[action]") ]
@@ -119,6 +49,11 @@ namespace Sabu.Controllers
           
             return Ok();
 
+        }
+        [HttpGet("ByWord")]
+        public async Task<IActionResult>GetByText(string text)
+        {
+            return Ok(await _service.GetWordByText (text));
         }
     }
 }

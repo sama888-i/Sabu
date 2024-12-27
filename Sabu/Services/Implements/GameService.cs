@@ -6,6 +6,7 @@ using Sabu.DAL;
 using Sabu.DTOs.Games;
 using Sabu.DTOs.Words;
 using Sabu.Entities;
+using Sabu.Exceptions.Games;
 using Sabu.Exstensions;
 using Sabu.Services.Abstracts;
 
@@ -27,7 +28,10 @@ namespace Sabu.Services.Implements
             var game = await _context.Games.FindAsync(id);
             if(game==null||game.Score!=null)
             {
-                throw new Exception();
+                if (game == null)
+                    throw new GameNotFoundException();
+                else
+                    throw new GameScoreNotNullException();
 
             }
             IQueryable<Word> query = _context.Words           
@@ -48,10 +52,11 @@ namespace Sabu.Services.Implements
             {
                 Fail = 0,
                 Success =0,
-                Skip=0,
+                Skip=1,
                 Words=wordStack ,
                 MaxSkipCount = game.SkipCount,
-                UsedWordIds =words.Select(x=>x.Id)
+                UsedWordIds =words.Select(x=>x.Id),
+                FailCount=game.FailCount 
                
             };
             _cache.Set(id, status,TimeSpan.FromSeconds(300));
@@ -60,18 +65,44 @@ namespace Sabu.Services.Implements
         }
 
 
-        public Task End(Guid id)
+        public async Task<GameResultDto> End(Guid id)
         {
-            throw new NotImplementedException();
+            var game = await _context.Games.FindAsync(id);
+            if (game == null || game.Score != null)
+            {
+                if (game == null)
+                    throw new GameNotFoundException();
+                else
+                    throw new GameScoreNotNullException();
+
+            }
+            var status = _getCurrentGame(id);
+            int totalSuccess = status.Success - (status.Fail / game.FailCount );
+            if(totalSuccess < 0)
+            {
+                totalSuccess = 0;
+            }
+            var result = new GameResultDto()
+            { 
+                Score =totalSuccess,
+                SuccessAnswer =status.Success ,
+                WrongAnswer =status .Fail,
+                LanguageCode=game.LanguageCode 
+
+            };
+
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+            return result;
         }
 
         public async Task Fail(Guid id)
         {
             var status = _getCurrentGame(id);
-            
             status.Fail++;
-            status.Words.Pop();
+            var currentWord=status.Words.Pop();
             _cache.Set(id, status, TimeSpan.FromSeconds(300));
+            
+            
             
         }
 
@@ -85,12 +116,16 @@ namespace Sabu.Services.Implements
                 _cache.Set(id, status,TimeSpan.FromSeconds(300));
             }
             return null;
+               
         }
 
      
-        public Task Success(Guid id)
+        public async Task Success(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            status.Success++;
+            var currentWord = status.Words.Pop();
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
         }
         GameStatusDto _getCurrentGame(Guid id)
         {

@@ -9,5 +9,6 @@ namespace Sabu.Services.Abstracts
         Task<IEnumerable<WordGetDto>> GetAllAsync();
         Task<bool> DeleteAsync(string text);
         Task UpdateAsync(string text,WordUpdateDto dto);
+        Task<WordGetDto> GetWordByText(string text);
     }
 }

@@ -47,5 +47,13 @@ namespace Sabu.Services.Implements
             await _context.SaveChangesAsync();
             
         }
+        public async Task<WordGetDto> GetWordByText(string text) 
+        {
+            var word = await _context.Words.Include(x=>x.BannedWords).FirstOrDefaultAsync(x => x.Text == text);
+            if (word == null)
+                throw new WordNotFoundException();
+            return _mapper.Map<WordGetDto>(word);
+
+        }
     }
 }

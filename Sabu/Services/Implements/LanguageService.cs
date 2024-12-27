@@ -29,7 +29,8 @@ namespace Sabu.Services.Implements
         public async Task<LanguageGetDto> UpdateAsync(string code,LanguageUpdateDto dto)
         {
             var language = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
-            if (language == null) return null;
+            if (language == null)
+                throw new LanguageNotFoundException();
             language.Name = dto.Name;
             language.Icon = dto.Icon;
             await _context.SaveChangesAsync();
@@ -44,16 +45,20 @@ namespace Sabu.Services.Implements
         public async Task<bool>DeleteAsync(string code)
         {
            var language= await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
-            if (language == null) return false;
-            _context.Languages.Remove(language);
-            await _context.SaveChangesAsync();
+            if (language == null)
+                throw new LanguageNotFoundException();
+          
+             _context.Languages.Remove(language);
+             await _context.SaveChangesAsync();
+            
             return true;
 
         }
         public async Task<LanguageGetDto> GetByCodeLangAsync(string code)
         {
             var language = await _context.Languages.FirstOrDefaultAsync(x => x.Code == code);
-            if (language == null) return null;
+            if (language == null)
+                throw new LanguageNotFoundException();
             return new LanguageGetDto
             {
                 Code =language .Code ,

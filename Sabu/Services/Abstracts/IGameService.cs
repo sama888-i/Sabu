@@ -11,6 +11,7 @@ namespace Sabu.Services.Abstracts
         Task Fail(Guid id);
         Task Success(Guid id);
         Task<WordForGameDto> Skip(Guid id);
-        Task End(Guid id);
+        Task<GameResultDto> End(Guid id);
+        
     }
 }

@@ -17,6 +17,38 @@
   },
   {
     "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "End",
+    "RelativePath": "api/Games/End",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "Fail",
+    "RelativePath": "api/Games/Fail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.GamesController",
     "Method": "Get",
     "RelativePath": "api/Games/Get",
     "HttpMethod": "GET",
@@ -72,6 +104,22 @@
     "ContainingType": "Sabu.Controllers.GamesController",
     "Method": "Start",
     "RelativePath": "api/Games/Start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.GamesController",
+    "Method": "Success",
+    "RelativePath": "api/Games/Success",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -222,6 +270,22 @@
         "Name": "dto",
         "Type": "Sabu.DTOs.Words.WordUpdateDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sabu.Controllers.WordsController",
+    "Method": "GetByText",
+    "RelativePath": "api/Words/ByWord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
